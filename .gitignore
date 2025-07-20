@@ -21,3 +21,6 @@ node_modules/
 # OS and IDE specific 
 .vscode
 .DS_Store
+
+# Built site
+_site/

@@ -1,0 +1,27 @@
+{
+    "title": "Amherst Community Band",
+    "url": "/",
+    "logoUrl": "/_images/acb_logo.jpg",
+    "navbarMenu": [
+        {
+            "anchor": "Home",
+            "url": "/home/"
+        },
+        {
+            "anchor": "Join Us",
+            "url": "/join/"
+        },
+        {
+            "anchor": "Donate",
+            "url": "/donate/"
+        },
+        {
+            "anchor": "For Members",
+            "url": "/members/"
+        },
+        {
+            "anchor": "About",
+            "url": "/about/"
+        }
+    ]
+}
