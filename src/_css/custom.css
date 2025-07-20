@@ -1,10 +1,16 @@
-
 .carousel {
-  background: #EEE;
+  background: #fff;
+}
+
+.carousel-cell {
+  margin-right: 16px;
 }
 
 .carousel-cell img {
   display: block;
+  border-radius: 8px; /* Optional: rounded corners */
+  border: 2px solid #fff; /* Adds a white border around images */
+  box-sizing: border-box;
 }
 
 @media screen and ( min-width: 768px ) {
