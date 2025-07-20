@@ -1,21 +1,19 @@
 {% include "head.njk" %}
 <body class="is-flex is-flex-direction-column">
-    <section class="hero is-fullheight">
-    <div class="hero-head">
+    {# <section class="hero is-fullheight"> #}
+    {# <div class="hero-head"> #}
     {% include "nav.njk" %}
-    </div>
+    {# </div> #}
 
-    <div class="hero-body is-flex-grow-1">
+    {# <div class="hero-body is-flex-grow-1"> #}
         <div class="is-flex">
-
             {{ content | safe }}
+        </div>
 
-          </div>
-
-    </div>
-    <div class="hero-foot">
+    {# </div> #}
+    {# <div class="hero-foot"> #}
     {% include "footer.njk" %}
-    </div>
-    </section>
+    {# </div> #}
+    {# </section> #}
   </body>
 </html>
