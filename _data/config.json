@@ -5,7 +5,7 @@
     "navbarMenu": [
         {
             "anchor": "Home",
-            "url": "/home/"
+            "url": "#"
         },
         {
             "anchor": "Join Us",
@@ -22,6 +22,24 @@
         {
             "anchor": "About",
             "url": "/about/"
+        }
+    ],
+    "carouselImages":[
+        {
+            "imgPath":"/_images/band1.png",
+            "caption": "A tradition of music in Amherst."
+        },
+        {
+            "imgPath": "/_images/band2.png",
+            "caption": "We practice. We play. We perform. <b>Together</b>."
+        },
+        {
+            "imgPath": "/_images/band3.png",
+            "caption": "Fun. Friendships. <b>Shared experience</b>."
+        },
+        {
+            "imgPath": "/_images/band4.jpg",
+            "caption": "We are the Amherst <b>Community</b> Band."
         }
     ]
 }
