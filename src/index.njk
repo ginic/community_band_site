@@ -1,21 +1,18 @@
 ---
 layout: page.njk
 title: Amherst Community Band
+
 ---
 <section class="section is-flex-grow-1 has-text-centered">
     <div class="container">
         <div class="carousel"
-        data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+        data-flickity='{ "imagesLoaded": true, "percentPosition": false, "lazyLoad": true }'>
+            {% for slide in config.carouselImages %}
             <div class="carousel-cell">
-                <p>Caption <b>1</b></p>
-                <br>
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+                <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" />
             </div>
-            <div class="carousel-cell">
-                <p>Caption <b>2</b></p>
-                <br>
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
-            </div>
+            {% endfor %}
+
         </div>
     </div>
 </section>
