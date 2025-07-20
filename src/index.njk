@@ -6,11 +6,11 @@ title: Amherst Community Band
 <section class="section is-flex-grow-1 has-text-centered">
     <div class="container">
         <div class="carousel"
-        data-flickity='{"lazyLoad": true}'>
+        data-flickity='{"lazyLoad": true, "setGallerySize":true}'>
             {% for slide in config.carouselImages %}
             <div class="carousel-cell">
                 <p>{{ slide.caption|safe }}</p>
-                <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" width="500" height="500" />
+                <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" />
             </div>
             {% endfor %}
 
