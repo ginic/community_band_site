@@ -11,3 +11,10 @@
         </div>
     </div>
 </footer>
+
+{% set js %}
+  {% include "scripts.js" %}
+{% endset %}
+<script>
+  {{ js | safe }}
+</script>

@@ -2,8 +2,7 @@
     <div class="container">
         <div class="navbar-brand">
             <img src="{{ config.logoUrl }}" alt="{{ config.title }}" width="180" height="auto"/>
-            <a role="button" class="navbar-burger"
-            data-target="navigation-headers" aria-label="menu" aria-expanded="false" >
+            <a role="button" class="navbar-burger" data-target="navigation-headers" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -13,7 +12,6 @@
 
         <div id="navigation-headers" class="navbar-menu">
             <div class="navbar-start">
-
                 {% for item in config.navbarMenu %}
                     <a class="navbar-item" href="{{item.url}}">
                         {{item.anchor}}
