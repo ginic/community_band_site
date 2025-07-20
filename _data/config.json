@@ -28,22 +28,22 @@
         {
             "imgPath":"/_images/band1.png",
             "caption": "A tradition of music in Amherst.",
-            "altText":""
+            "altText":"Band beginning to play"
         },
         {
             "imgPath": "/_images/band2.png",
             "caption": "We practice. We play. We perform. <b>Together</b>.",
-            "altText":""
+            "altText":"Clarinets playing"
         },
         {
             "imgPath": "/_images/band3.png",
             "caption": "Fun. Friendships. <b>Shared experience</b>.",
-            "altText": ""
+            "altText": "The whole band playing in the park"
         },
         {
             "imgPath": "/_images/band4.jpg",
             "caption": "We are the Amherst <b>Community</b> Band.",
-            "altText": ""
+            "altText": "Band smiling in concert hall"
         }
     ]
 }
