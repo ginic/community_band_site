@@ -20,7 +20,7 @@ html, body {
 }
 
 .carousel-cell {
-  margin-right: 10px;
+  /* margin-right: 10px; */
   height: 100%;
 }
 
@@ -28,7 +28,7 @@ html, body {
   display: block;
   height: 100%;
   max-height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -40,21 +40,16 @@ html, body {
 dl {
     display: flex;
     flex-flow: row wrap;
-    /* border: solid #333;
-    border-width: 1px 1px 0 0; */
 }
+
 dt {
     flex-basis: 20%;
     font-weight: bold;
-    /* padding: 2px 4px; */
-    /* background: #333; */
-    /* text-align: right; */
-    /* color: #fff; */
 }
+
 dd {
     flex-basis: 80%;
     flex-grow: 1;
     margin: 0;
     padding: 2px 4px;
-    /* border-bottom: 1px solid #333; */
 }
