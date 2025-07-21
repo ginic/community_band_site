@@ -9,8 +9,7 @@ module.exports = (config) => {
         dir: {
             input: './src',
             data: '../_data',
-            includes: '../_includes',
-            output: "_site",
+            includes: '../_includes'
         },
     };
 };
