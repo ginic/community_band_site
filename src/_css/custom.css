@@ -1,3 +1,19 @@
+/* Use logo color as primary color for bulma*/
+:root {
+  --bulma-primary-h: 3deg;
+  --bulma-primary-s: 79%;
+  --bulma-primary-l: 55%;
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100vh;
+}
+
 .carousel {
   background: #fff;
   height: 400px;
