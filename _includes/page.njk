@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="has-navbar-fixed-top">
+<html lang="en">
 {% include "head.njk" %}
 <body class="is-flex is-flex-direction-column">
     {% include "nav.njk" %}
@@ -9,5 +9,13 @@
     </div>
 
     {% include "footer.njk" %}
+
+    {% set js %}
+        {% include "scripts.js" %}
+    {% endset %}
+    <script>
+        {{ js | safe }}
+    </script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>

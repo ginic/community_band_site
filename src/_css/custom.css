@@ -20,9 +20,8 @@ html, body {
 }
 
 .carousel-cell {
-  margin-right: 20px;
+  margin-right: 10px;
   height: 100%;
-  overflow: hidden;
 }
 
 .carousel-cell img {
@@ -31,4 +30,13 @@ html, body {
   max-height: 100%;
   object-fit: contain;
   border-radius: 8px;
+}
+
+.pad-bottom {
+    margin-bottom: 8em;
+}
+
+.downsize-image {
+    width: auto;
+    height: 50%;
 }
