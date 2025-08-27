@@ -44,10 +44,8 @@
         {
             "label": "2025 Rehearsals",
             "schedule_items": [
-                {
-                    "date_and_time": "Thursday, December 11th at 6 pm",
-                    "location": "George N. Parks Minute Man Marching Band Building, 110 Grinnell Way, Amherst, MA  01003"
-                }
+                {"date_and_time": "Thursday, December 11th at 6 pm"},
+                {"date_and_time":"another rehearsal", "location": "with a location"}
             ]
         }
     ],

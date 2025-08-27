@@ -1,0 +1,29 @@
+---
+layout: page.njk
+title: Information for Members
+---
+<section class="section is-flex-grow-1">
+<h1 class="title is-1 has-text-centered">Rehearsals</h1>
+    <div class="container">
+        <h3 class="title is-3 mb-1">Where</h3>
+            <p>George N. Parks Minute Man Marching Band Building<br>110 Grinnell Way<br>Amherst, MA  01003<br>
+            <a href="https://maps.app.goo.gl/GZFks1MQdtiHWw9TA">Google Maps</a>
+            <br>
+            <i>(unless noted otherwise)</i></p>
+    </div>
+    <div class="container mt-3">
+        <h3 class="title is-3 mb-2">When</h3>
+        {% for category in config.rehearsals %}
+            <h5 class="title is-5 mb-1">{{ category.label }}</h5>
+                <ul>
+                {% for rehearsal in category.schedule_items %}
+                    {% if rehearsal.location %}
+                        <li>{{ rehearsal.date_and_time }} <b>{{ rehearsal.location }}</b></li>
+                    {% else %}
+                        <li>{{ rehearsal.date_and_time }}</li>
+                    {% endif %}
+                {% endfor %}
+                </ul>
+        {% endfor %}
+    </div>
+<section>
