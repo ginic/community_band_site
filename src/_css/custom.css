@@ -1,9 +1,25 @@
 /* Use logo color as primary color for bulma*/
 :root {
-  --bulma-primary-h: 3deg;
+  --bulma-primary-h: 5deg;
   --bulma-primary-s: 79%;
-  --bulma-primary-l: 55%;
+  --bulma-primary-l: 54%;
+  --bulma-link-h: 245deg;
+  --bulma-link-s: 79%;
+  --bulma-link-l: 68%;
+  --bulma-info-h: 185deg;
+  --bulma-info-s: 79%;
+  --bulma-info-l: 68%;
+  --bulma-success-h: 65deg;
+  --bulma-success-s: 79%;
+  --bulma-success-l: 68%;
 }
+/* Corresponding hex color codes
+--color-1: #E63E2F;
+--color-1: #EE786D;
+--color-2: #E3EE6D;
+--color-3: #6DE3EE;
+--color-4: #786DEE;
+*/
 
 /* General */
 html {
