@@ -1,0 +1,26 @@
+---
+layout: page.njk
+title: Performance Schedule
+---
+<section class="section is-flex-grow-1">
+    <h1 class="title is-1 has-text-centered">Performance Schedule</h1>
+    <div class="columns">
+        <div class="column is-one-half">
+        {% for category in config.concerts %}
+            <h2 class="title is-2">{{ category.label }}</h2>
+            {% for concert in category.schedule_items %}
+                <h4 class="title is-4">{{ concert.date_and_time}}</h4>
+                {% if concert.concert_name %}
+                    <h6 class="subtitle is-6 mb-0">{{ concert.concert_name }}</h6>
+                {% endif %}
+                <p>{{ concert.location }}</p>
+            {% endfor %}
+        {% endfor %}
+        </div>
+        <div class="column is-one-half is-vcentered">
+            <figure class="image is-4by3">
+                <iframe class="has-ratio" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&showPrint=0&src=YjQyODdmY2QwZDA5YjgzN2I1MTFiZDBjODU3ZWMzOTg0NTYxNmQ1MTFkODE2MTAzY2JiMTYwMDRiM2E3Mjg5MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23e67c73" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </figure>
+        </div>
+    </div>
+<section>

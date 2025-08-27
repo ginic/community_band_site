@@ -20,8 +20,35 @@
             "url": "/members/"
         },
         {
+            "anchor": "Performances",
+            "url": "/schedule/"
+        },
+        {
             "anchor": "About Us",
             "url": "/about/"
+        }
+    ],
+    "concerts":[
+        {
+            "label": "2025 Concerts",
+            "schedule_items": [
+                {
+                    "date_and_time":"Saturday, December 13th at 6 pm",
+                    "concert_name":"Holiday Concert",
+                    "location":"St. Brigid's Parish Center, 43 N Prospect St, Amherst, MA 01002"
+                }
+            ]
+        }
+    ],
+    "rehearsals":[
+        {
+            "label": "2025 Rehearsals",
+            "schedule_items": [
+                {
+                    "date_and_time": "Thursday, December 11th at 6 pm",
+                    "location": "George N. Parks Minute Man Marching Band Building, 110 Grinnell Way, Amherst, MA  01003"
+                }
+            ]
         }
     ],
     "carouselImages":[
@@ -46,4 +73,5 @@
             "altText": "Band smiling in concert hall"
         }
     ]
+
 }
