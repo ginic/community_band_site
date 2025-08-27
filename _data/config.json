@@ -52,7 +52,7 @@
     "carouselImages":[
         {
             "imgPath":"/_images/band1.png",
-            "caption": "A tradition of music in Amherst.",
+            "caption": "We are the Amherst <b>Community</b> Band.",
             "altText":"Band beginning to play"
         },
         {
@@ -67,7 +67,7 @@
         },
         {
             "imgPath": "/_images/band4.jpg",
-            "caption": "We are the Amherst <b>Community</b> Band.",
+            "caption": "A tradition of music in Amherst.",
             "altText": "Band smiling in concert hall"
         }
     ]
