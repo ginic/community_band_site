@@ -3,17 +3,51 @@ layout: page.njk
 title: Amherst Community Band
 
 ---
-<section class="section is-flex-grow-1 has-text-centered">
-    <div class="container">
+<section class="hero mt-0">
+    <div class="hero-body">
         <div class="carousel"
         data-flickity='{"lazyLoad": true, "setGallerySize":true}'>
             {% for slide in config.carouselImages %}
-            <div class="carousel-cell">
-                <p>{{ slide.caption|safe }}</p>
-                <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" />
-            </div>
-            {% endfor %}
 
+                <div class="carousel-cell">
+                    <p class="has-text-centered">{{ slide.caption|safe }}</p>
+                    <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" />
+
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="columns">
+        <div class="column is-flex">
+            <div class="container has-background-primary-light has-text-centered p-5 is-rounded">
+                <p>The Amherst Community Band is made up of college kids, high school kids and adults, some of whom are in their 80’s!  Whether you play right now, or you haven’t played in years, you’ll feel right at home at ACB. Best of all we’re audition free!</p>
+                <br>
+                <div class="container has-text-centered">
+                    <a class="button" href="/join/">Join Us!</a>
+                </div>
+            </div>
+        </div>
+        <div class="column is-flex">
+            <div class="container has-background-grey-lighter has-text-centered p-5 is-rounded">
+                <p>Our band is always under construction.  Help us buy music, rent trucks and make music in our community with your generous online contributions!</p>
+                <br>
+                <div class="container has-text-centered">
+                    <a class="button" href="/join/">Donate on Zeffy!</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="column is-flex">
+            <div class="container has-background-success has-text-centered p-5 is-rounded">
+                <p>We play concerts in Amherst, MA all summer long and have a holiday concert in December! All concerts are free and open to the public. After all, without an audience, it's only a rehearsal!</p>
+                <br>
+                <div class="container has-text-centered">
+                    <a class="button" href="/schedule/">See us play!</a>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
