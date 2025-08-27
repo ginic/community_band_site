@@ -4,3 +4,4 @@
 - [ ] Should the calendar also go on the members page with the rehearsal information?
 - [ ] Minify before serving
 - [ ] Responsive images
+- [ ] Add social links in the footer
