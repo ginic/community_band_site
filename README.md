@@ -9,6 +9,8 @@ The structure for the code repository follows the example on https://github.com/
 
 2. Your favorite command line terminal or development IDE.
 
+3. Run `npm install` from the root of this directory to install dependencies.
+
 ## Build
 To build the static webpages, run `npm run build` and the result will appear in `_site`. Use this step to build the site for deployment.
 
