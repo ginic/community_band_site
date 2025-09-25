@@ -5,6 +5,10 @@
         <title>{{ title }}</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/versions/bulma-no-dark-mode.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-        <link rel="stylesheet" href="/_css/custom.css">
+        {% if eleventy.env.runMode == "build" %}
+            <link rel="stylesheet" href="/_css/custom.min.css">
+        {% else %}
+            <link rel="stylesheet" href="/_css/custom.css">
+        {% endif %}
     </head>
 
