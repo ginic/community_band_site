@@ -9,7 +9,7 @@ title: Amherst Community Band
             {% for slide in config.carouselImages %}
                 <div class="carousel-cell">
                     <p class="is-size-4 has-text-centered">{{ slide.caption|safe }}</p>
-                    <img src="{{ slide.imgPath}}" alt="{{ slide.altText }}" />
+                    {% image "src" + slide.imgPath, slide.altText, "(min-width: 768px) 50vw, 100vw" %}
                 </div>
             {% endfor %}
         </div>
