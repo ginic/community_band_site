@@ -7,8 +7,8 @@ module.exports = (config) => {
     // Add responsive image shortcode
     config.addAsyncShortcode("image", async function(src, alt, sizes = "100vw") {
         const metadata = await Image(src, {
-            widths: [320, 640, 960, 1200, 1800, null],
-            formats: ["jpeg", "png"],
+            widths: ["auto"],
+            formats: ["avif", "webp", "jpeg"],
             outputDir: "./_site/img/",
             urlPath: "/img/",
         });
