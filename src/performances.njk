@@ -6,16 +6,18 @@ title: Performances
     <h1 class="title is-1 has-text-centered">Performances</h1>
     <div class="columns">
         <div class="column is-one-half">
-        {% for category in config.concerts %}
-            <h2 class="title is-2">{{ category.label }}</h2>
-            {% for concert in category.schedule_items %}
-                <h4 class="title is-4">{{ concert.date_and_time}}</h4>
-                {% if concert.concert_name %}
-                    <h6 class="subtitle is-6 mb-0">{{ concert.concert_name }}</h6>
-                {% endif %}
-                <p>{{ concert.location }}</p>
+            <div class="container pl-6">
+            {% for category in config.concerts %}
+                <h2 class="title is-2">{{ category.label }}</h2>
+                {% for concert in category.schedule_items %}
+                    <h4 class="title is-4">{{ concert.date_and_time}}</h4>
+                    {% if concert.concert_name %}
+                        <h6 class="subtitle is-6 mb-0">{{ concert.concert_name }}</h6>
+                    {% endif %}
+                    <p>{{ concert.location }}</p>
+                {% endfor %}
             {% endfor %}
-        {% endfor %}
+            </div>
         </div>
         <div class="column is-one-half is-vcentered">
             <figure class="image is-4by3">
