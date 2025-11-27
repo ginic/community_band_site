@@ -35,7 +35,7 @@
                 {
                     "date_and_time":"Saturday, December 13th at 6 pm",
                     "concert_name":"Holiday Concert",
-                    "location":"St. Brigid's Parish Center, 43 N Prospect St, Amherst, MA 01002"
+                    "location":"First Church Amherst, 165 Main St, Amherst, MA 01002"
                 }
             ]
         }
@@ -44,8 +44,7 @@
         {
             "label": "2025 Rehearsals",
             "schedule_items": [
-                {"date_and_time": "Thursday, December 11th at 6 pm"},
-                {"date_and_time":"another rehearsal", "location": "with a location"}
+                {"date_and_time": "Thursday, December 11th at 6 pm"}
             ]
         }
     ],
