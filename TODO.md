@@ -1,7 +1,2 @@
-- [ ] Put in correct Zeffy donation links on homepage and donation page
-- [ ] Where should the video go? (https://youtu.be/Ip_l4Xkx-84?si=enLdjEemGUjph5D9)
 - [ ] What contact info should go where? (Strongly recommend against putting just John's email on the site)
-- [ ] Should the calendar also go on the members page with the rehearsal information?
-- [ ] Minify before serving
-- [ ] Responsive images
-- [ ] Add social links in the footer
+- [ ] Do we want a link to sign up for the newsletter?
