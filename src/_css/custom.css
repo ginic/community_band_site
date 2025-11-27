@@ -76,3 +76,9 @@ ul {
 .is-rounded {
     border-radius: 25px;
 }
+
+figure {
+    border: 5px solid #E63E2F;
+    padding: 8px;
+}
+
