@@ -50,24 +50,14 @@
     ],
     "carouselImages":[
         {
-            "imgPath":"/_images/band1.png",
+            "imgPath":"/_images/band3.png",
             "caption": "We are the Amherst <b>Community</b> Band.",
-            "altText":"Band beginning to play"
+            "altText": "The whole band playing in the park"
         },
         {
             "imgPath": "/_images/band2.png",
             "caption": "We practice. We play. We perform. <b>Together</b>.",
             "altText":"Clarinets playing"
-        },
-        {
-            "imgPath": "/_images/band3.png",
-            "caption": "Fun. Friendships. <b>Shared experience</b>.",
-            "altText": "The whole band playing in the park"
-        },
-        {
-            "imgPath": "/_images/band4.jpg",
-            "caption": "A tradition of music in Amherst.",
-            "altText": "Band smiling in concert hall"
         }
     ]
 
