@@ -11,11 +11,12 @@ description: Performance schedule for the Amherst Community Band.
             {% for category in config.concerts %}
                 <h2 class="title is-2">{{ category.label }}</h2>
                 {% for concert in category.schedule_items %}
-                    <h4 class="title is-4">{{ concert.date_and_time}}</h4>
+                    <h4 class="title is-4 mb-2">{{ concert.date_and_time}}</h4>
                     {% if concert.concert_name %}
-                        <h6 class="subtitle is-6 mb-0">{{ concert.concert_name }}</h6>
+                        <p class="subtitle is-6 mb-2">{{ concert.concert_name }}</p>
                     {% endif %}
-                    <p>{{ concert.location }}</p>
+                    <p class="subtitle is-6 mb-2">{{ concert.location }}</p>
+                    <br>
                 {% endfor %}
             {% endfor %}
             </div>
