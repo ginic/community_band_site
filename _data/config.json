@@ -30,12 +30,29 @@
     ],
     "concerts":[
         {
-            "label": "2025 Concerts",
+            "label": "2026 Concerts",
             "schedule_items": [
                 {
-                    "date_and_time":"Saturday, December 13th at 6 pm",
-                    "concert_name":"Holiday Concert",
-                    "location":"First Church Amherst, 165 Main St, Amherst, MA 01002"
+                    "date_and_time":"Saturday, June 27th, 6pm",
+                    "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
+                },
+                {
+                    "date_and_time":"Saturday, July 3rd",
+                    "concert_name":"4th of July Fireworks",
+                    "location":"McGuirk Stadium, Stadium Drive, Hadley, Massachusetts 01003"
+                },
+                {
+                    "date_and_time":"Saturday, July 25th, 6pm",
+                    "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
+                },
+                {
+                    "date_and_time":"Saturday, August 15th, 6pm",
+                    "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
+                },
+                {
+                    "date_and_time":"Tuesday, August 18th",
+                    "concert_name":"Best of the Summer",
+                    "location":"South Amherst Common, Amherst, MA 01002, USA"
                 }
             ]
         }
