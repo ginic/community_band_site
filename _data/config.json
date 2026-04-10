@@ -67,6 +67,11 @@
     ],
     "carouselImages":[
         {
+            "imgPath":"/_images/summer_2026.jpg",
+            "caption": "Announcing the 2026 Concert Schedule!",
+            "altText": "A collage listing the Amherst Community Band Concert dates for 2026: June 27, July 25, August 15"
+        },
+        {
             "imgPath":"/_images/band3.png",
             "caption": "We are the Amherst <b>Community</b> Band.",
             "altText": "The whole band playing in the park"
