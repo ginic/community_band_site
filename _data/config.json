@@ -33,24 +33,24 @@
             "label": "2026 Concerts",
             "schedule_items": [
                 {
-                    "date_and_time":"Saturday, June 27th, 6pm",
+                    "date_and_time":"Saturday, June 27th, 6:30pm",
                     "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
                 },
                 {
-                    "date_and_time":"Saturday, July 3rd",
+                    "date_and_time":"Saturday, July 3rd, 8pm",
                     "concert_name":"4th of July Fireworks",
                     "location":"McGuirk Stadium, Stadium Drive, Hadley, Massachusetts 01003"
                 },
                 {
-                    "date_and_time":"Saturday, July 25th, 6pm",
+                    "date_and_time":"Saturday, July 25th, 6:30pm",
                     "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
                 },
                 {
-                    "date_and_time":"Saturday, August 15th, 6pm",
+                    "date_and_time":"Saturday, August 15th, 6:30pm",
                     "location":"Sweetser Park, Amherst, MA 01002, Amherst, MA 01002"
                 },
                 {
-                    "date_and_time":"Tuesday, August 18th",
+                    "date_and_time":"Tuesday, August 18th, 6:30pm",
                     "concert_name":"Best of the Summer",
                     "location":"South Amherst Common, Amherst, MA 01002, USA"
                 }
@@ -66,11 +66,6 @@
         }
     ],
     "carouselImages":[
-        {
-            "imgPath":"/_images/summer_2026.jpg",
-            "caption": "Announcing the 2026 Concert Schedule!",
-            "altText": "A collage listing the Amherst Community Band Concert dates for 2026: June 27, July 25, August 15"
-        },
         {
             "imgPath":"/_images/band3.png",
             "caption": "We are the Amherst <b>Community</b> Band.",
