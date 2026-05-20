@@ -30,25 +30,32 @@ html, body {
     height: 100vh;
 }
 
-.carousel {
-  height: 650px;
-}
-
 .carousel-cell {
+  width: 100%;
   margin-right: 10px;
-  height: 100%;
 }
 
-.carousel-cell img {
+.carousel-cell img,
+.carousel-cell picture img {
   display: block;
-  height: 100%;
-  max-height: 100%;
-  object-fit: scale-down;
+  width: 100%;
+  height: auto;
 }
 
 .downsize-image {
     width: auto;
     height: 50%;
+}
+
+.navbar-brand img {
+    width: 180px;
+    height: auto;
+}
+
+figure picture img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 dl {
