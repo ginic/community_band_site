@@ -53,6 +53,16 @@ html, body {
     height: auto;
 }
 
+.navbar.is-primary .navbar-item {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.navbar.is-primary .navbar-item:hover {
+    color: white;
+}
+
 figure picture img {
     max-width: 100%;
     height: auto;

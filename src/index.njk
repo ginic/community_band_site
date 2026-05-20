@@ -4,12 +4,12 @@ title: Amherst Community Band
 description: The homepage of the Amherst Community Band from Amherst, Massachusetts.
 ---
 <section>
-    <div class="hero-body pt-0">
+    <div class="hero-body pt-2">
         <div class="carousel"
         data-flickity='{"setGallerySize":true}'>
             {% for slide in config.carouselImages %}
                 <div class="carousel-cell">
-                    <p class="is-size-4 has-text-centered">{{ slide.caption|safe }}</p>
+                    <p class="is-size-3 has-text-centered">{{ slide.caption|safe }}</p>
                     {% image "src" + slide.imgPath, slide.altText, "(min-width: 768px) 50vw, 100vw" %}
                 </div>
             {% endfor %}
