@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Rehearsal announcement block under the homepage banner with the full season schedule link and guest conductor list
 
 ### Changed
+- Replaced placeholder Community Music Links content with the provided 0613-0529 area community bands list and external links
+
 - Updated board member entry from Website Virginia Partridge to At-Large Rachel Bellenoit in public board listings
 
 - Removed inline style from the Join page musician signup CTA; contrast is handled in the stylesheet
