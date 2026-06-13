@@ -4,14 +4,14 @@
 <body class="is-flex is-flex-direction-column">
     {% include "nav.njk" %}
 
-    <div class="is-flex-grow-1">
+    <div class="is-flex-grow-1 container {{ pageContainerClass or 'is-max-desktop' }}">
         {{ content | safe }}
     </div>
 
     {% include "footer.njk" %}
 
     {% if eleventy.env.runMode == "build" %}
-        <script src="/_js/scripts.min.js"></script>
+        <script src="{{ '/_js/scripts.min.js' | withBase }}"></script>
     {% else %}
     {% set js %}
         {% include "scripts.js" %}

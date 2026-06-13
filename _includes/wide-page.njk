@@ -1,9 +1,13 @@
 ---
 layout: page.njk
+pageContainerClass: is-max-widescreen
 ---
 <section class="section">
-    <div class="container">
-        <h1 class="title is-1 has-text-centered">{{ title }}</h1>
+    <div class="container acb-wide-page">
+        <h1 class="title is-1 has-text-centered mb-4">{{ title }}</h1>
+        {% if intro %}
+            <p class="acb-wide-intro subtitle is-5 has-text-centered mb-5">{{ intro }}</p>
+        {% endif %}
         {{ content | safe }}
     </div>
 </section>

@@ -1,0 +1,158 @@
+{
+  "generatedAt": "2026-06-13T04:12:49.890Z",
+  "baseUrl": "http://localhost:8081",
+  "pagesTested": [
+    {
+      "mode": "desktop",
+      "route": "/",
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/about/",
+      "url": "http://localhost:8081/about/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/join/",
+      "url": "http://localhost:8081/join/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/performances/",
+      "url": "http://localhost:8081/performances/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/members/",
+      "url": "http://localhost:8081/members/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/donate/",
+      "url": "http://localhost:8081/donate/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/board-volunteers/",
+      "url": "http://localhost:8081/board-volunteers/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/documents/",
+      "url": "http://localhost:8081/documents/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/community-music-links/",
+      "url": "http://localhost:8081/community-music-links/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "desktop",
+      "route": "/locations/",
+      "url": "http://localhost:8081/locations/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "mobile",
+      "route": "/",
+      "url": "http://localhost:8081/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "mobile",
+      "route": "/join/",
+      "url": "http://localhost:8081/join/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "mobile",
+      "route": "/board-volunteers/",
+      "url": "http://localhost:8081/board-volunteers/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "mobile",
+      "route": "/locations/",
+      "url": "http://localhost:8081/locations/",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "mode": "mobile",
+      "route": "/performances/",
+      "url": "http://localhost:8081/performances/",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "screenshots": [
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-home.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-about.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-join.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-performances.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-members.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-donate.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-board-volunteers.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-documents.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-community-music-links.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/desktop-locations.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/mobile-home.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/mobile-join.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/mobile-board-volunteers.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/mobile-locations.png",
+    "/Users/macbookpro/Desktop/community_band_site/docs/screenshots/puppeteer/mobile-performances.png"
+  ],
+  "checks": {
+    "contactModal": {
+      "passed": true,
+      "detail": "Open/close successful on /."
+    },
+    "newsletterModal": {
+      "passed": true,
+      "detail": "Open/close successful on /."
+    },
+    "joinSignupForm": {
+      "passed": true,
+      "detail": "Found URL: https://docs.google.com/forms/d/1nuJW-ZWfX4PpOa5TBXrIaNZX7z1w-D5yCEj5n_BbWLw/viewform"
+    },
+    "locationsMapButtons": {
+      "passed": true,
+      "detail": "{\"hasRehearsalMapButton\":true,\"hasConcertMapButton\":true}"
+    },
+    "schedulePdf": {
+      "passed": true,
+      "detail": "{\"hasApprovedDownloadButtonText\":true,\"hasApprovedPdfLink\":true,\"pdfLinks\":[\"/docs/acb-summer-2026-schedule.pdf\"]}"
+    },
+    "footerCredit": {
+      "passed": true,
+      "detail": "Checked home page footer text."
+    }
+  },
+  "issues": [],
+  "consoleErrors": [],
+  "pageErrors": [],
+  "httpErrors": []
+}

@@ -3,86 +3,111 @@ layout: page.njk
 title: Amherst Community Band
 description: The homepage of the Amherst Community Band from Amherst, Massachusetts.
 ---
-<section>
-    <div class="hero-body pt-2">
-        <div class="carousel"
-        data-flickity='{"setGallerySize":true}'>
-            {% for slide in config.carouselImages %}
-                <div class="carousel-cell">
-                    <p class="is-size-3 has-text-centered">{{ slide.caption|safe }}</p>
-                    {% image "src" + slide.imgPath, slide.altText, "(min-width: 768px) 50vw, 100vw" %}
+{% set firstConcert = config.concerts[0].schedule_items[0] %}
+{% set firstRehearsal = config.rehearsals[0].schedule_items[0] %}
+
+<section class="section pt-3 pb-3">
+    <div class="home-hero carousel" data-flickity='{"setGallerySize":true,"wrapAround":true,"autoPlay":6500,"pauseAutoPlayOnHover":true}'>
+        {% for slide in config.carouselImages %}
+            <div class="carousel-cell home-hero-slide">
+                <div class="home-hero-image-wrap">
+                    {% image "src" + slide.imgPath, slide.altText, "(min-width: 1024px) 960px, (min-width: 768px) 80vw, 100vw" %}
+                    <p class="home-hero-caption is-size-4 has-text-weight-semibold">{{ slide.caption|safe }}</p>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
     </div>
 </section>
 
-
-<section class="section has-background-info-light">
+<section class="section pt-0 pb-4">
     <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-two-thirds">
-                <h2 class="title has-text-centered">Rehearsals begin Monday, June 8, 2026!</h2>
-                <p>Our Summer season is right around the corner. We're planning an exciting lineup of music and guest conductors. If you play an instrument, please consider joining us. All are welcome!</p>
-                <br>
-                <div class="has-text-centered">
-                    <a class="button" href="https://docs.google.com/forms/d/1nuJW-ZWfX4PpOa5TBXrIaNZX7z1w-D5yCEj5n_BbWLw/edit#response=ACYDBNi9KF_sG6WK7TuISavmooIY58MvRhoPU1S-JDF0rV94UQX7Nj6rtuBnhbGfvvjCRj4">Amherst Community Band 2026 Season Signup Form</a>
-                    <br><br>
-                    <a class="has-text-weight-medium" href="https://docs.google.com/spreadsheets/d/1BAiRqI2M5HVDRtvIcswyIRhhGg_DB7npbs3DAl_eka8/edit?usp=sharing">Here's the schedule for the full season.</a>
-                </div>
-                <br>
-                <p class="has-text-centered has-text-weight-bold">We are grateful to our scheduled guest conductors!</p>
-                <br>
-                <div class="columns is-centered">
-                    <div class="column is-narrow has-text-centered">
-                        <p><strong>June 27 &amp; July 3 Concerts</strong><br>
-                        Dave Morris, Conductor<br>
-                        Alexandria (Lexie) Black, Assistant Conductor</p>
-                        <br>
-
-                        <p><strong>July 25 Concert</strong><br>
-                        Juli Sansoucy, Conductor</p>
-                        <br>
-
-                        <p><strong>August 15 &amp; 18 Concerts</strong><br>
-                        Richard Cuoco, Conductor</p>
-                    </div>
-                </div>
-            </div>
+        <div class="content has-text-centered home-season-announcement mx-auto" style="max-width: 50rem;">
+            <h2 class="title is-3 mb-4">Rehearsals begin Monday, June 8, 2026!</h2>
+            <p class="mb-4">
+                Our Summer season is right around the corner. We&rsquo;re planning an exciting lineup of music and guest conductors. If you play an instrument, please consider joining us. All are welcome!
+            </p>
+            <p class="mb-4">
+                <a href="https://docs.google.com/spreadsheets/d/1BAiRqI2M5HVDRtvIcswyIRhhGg_DB7npbs3DAl_eka8/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                    Here&rsquo;s the schedule for the full season.
+                </a>
+            </p>
+            <p class="has-text-weight-semibold mb-3">We are grateful to our scheduled guest conductors!</p>
+            <p class="mb-3"><strong>June 27 &amp; July 3 Concerts</strong><br>Dave Morris, Conductor<br>Alexandria (Lexie) Black, Assistant Conductor</p>
+            <p class="mb-3"><strong>July 25 Concert</strong><br>Juli Sansoucy, Conductor</p>
+            <p class="mb-0"><strong>August 15 &amp; 18 Concerts</strong><br>Richard Cuoco, Conductor</p>
         </div>
     </div>
 </section>
 
-<section class="section">
-    <div class="columns">
-        <div class="column is-flex">
-            <div class="container has-background-primary-light has-text-centered p-5 has-soft-corners">
-                <p>The Amherst Community Band is made up of high school students, college students, and adults, some of whom are in their 80's!  Whether you play right now, or you haven’t played in years, you’ll feel right at home. Best of all we're audition free!</p>
-                <br>
-                <div class="container has-text-centered">
-                    <a class="button" href="/join/">Join Us!</a>
-                </div>
-            </div>
-        </div>
-        <div class="column is-flex">
-            <div class="container has-background-grey-lighter has-text-centered p-5 has-soft-corners">
-                <p>Our band is always under construction.  Help us buy music, rent trucks and make music in our community with your generous online contributions!</p>
-                <br>
-                <div class="container has-text-centered">
-                    <a class="button" href="https://www.zeffy.com/donation-form/keep-the-music-playing">Donate on Zeffy!</a>
-                </div>
+<section class="section pt-2">
+    <div class="home-welcome has-soft-corners p-5 has-background-info-light">
+        <h1 class="title is-2 has-text-centered mb-3">Welcome to the Amherst Community Band</h1>
+        <p class="is-size-5 has-text-centered mb-4">
+            The Amherst Community Band is made up of high school students, college students, and adults, some of whom are in their 80's.
+        </p>
+        <p class="has-text-centered mb-0">
+            Whether you play right now or have not played in years, you will feel right at home. Best of all, we are audition-free.
+        </p>
+    </div>
+</section>
 
-            </div>
+<section class="section pt-3 pb-3">
+    <div class="columns is-variable is-4">
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-info-card has-soft-corners p-5">
+                <h2 class="title is-4">Next Concert</h2>
+                <p class="is-size-6 has-text-weight-semibold mb-2">{{ firstConcert.date_and_time }}</p>
+                {% if firstConcert.concert_name %}
+                    <p class="mb-2">{{ firstConcert.concert_name }}</p>
+                {% endif %}
+                <p class="mb-4">{{ firstConcert.location }}</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/performances/' | withBase }}">View All Performances</a>
+            </article>
         </div>
-        <div class="column is-flex">
-            <div class="container has-background-success has-text-centered p-5 has-soft-corners">
-                <p>We play concerts in Amherst, MA all summer long and have a holiday concert in December! All concerts are free and open to the public. After all, without an audience, it's only a rehearsal!</p>
-                <br>
-                <div class="container has-text-centered">
-                    <a class="button" href="/performances/">See us play!</a>
-                </div>
 
-            </div>
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-info-card has-soft-corners p-5">
+                <h2 class="title is-4">Rehearsal Information</h2>
+                <p class="is-size-6 has-text-weight-semibold mb-2">{{ config.rehearsals[0].label }}</p>
+                <p class="mb-4">{{ firstRehearsal.date_and_time }}</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/members/' | withBase }}">For Members</a>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section pt-3">
+    <div class="columns is-multiline is-variable is-4">
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-action-card has-soft-corners p-5">
+                <h2 class="title is-4">Join Us</h2>
+                <p class="mb-4">If you play an instrument, please consider joining us. All are welcome.</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/join/' | withBase }}">Learn About Joining</a>
+            </article>
+        </div>
+
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-action-card has-soft-corners p-5">
+                <h2 class="title is-4">Performances</h2>
+                <p class="mb-4">Our concerts are free and open to the public throughout the summer, plus a winter concert each year.</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/performances/' | withBase }}">See the Schedule</a>
+            </article>
+        </div>
+
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-action-card has-soft-corners p-5">
+                <h2 class="title is-4">For Members</h2>
+                <p class="mb-4">Check rehearsal details, member information, and updates for current players.</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/members/' | withBase }}">Go to Members Page</a>
+            </article>
+        </div>
+
+        <div class="column is-half-desktop is-half-tablet is-full-mobile is-flex">
+            <article class="home-action-card has-soft-corners p-5">
+                <h2 class="title is-4">Donate</h2>
+                <p class="mb-4">Help us buy music, rent trucks, and make music in our community with your generous online contributions.</p>
+                <a class="button is-primary has-text-weight-bold has-text-white" href="{{ '/donate/' | withBase }}">Support the Band</a>
+            </article>
         </div>
     </div>
 </section>
