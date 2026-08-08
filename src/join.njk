@@ -2,20 +2,52 @@
 layout: content-page.njk
 title: Join the Amherst Community Band!
 description: How to join the Amherst Community Band.
+intro: The Amherst Community Band welcomes musicians of different ages and abilities.
+sidebarTitle: Quick Links
+sidebarText: Start with the members page for rehearsal details, or come to a rehearsal and introduce yourself.
+sidebarLinks:
+  - text: Members Page
+    href: /members/
+  - text: Performances
+    href: /performances/
+  - text: About Us
+    href: /about/
 ---
-<div class="columns">
+<div class="columns is-variable is-6">
+    <div class="column is-full">
+        <section class="mb-5">
+            <h2 class="title is-3">Musician signup</h2>
+            <div class="box acb-info-card">
+                <p class="mb-3">Interested in playing with the Amherst Community Band? Please complete our musician signup form. Someone from the band will follow up after your submission.</p>
+                <p class="mb-3">Your information will be used only to respond to your interest in playing with the Amherst Community Band.</p>
+                <a class="button is-primary has-text-weight-bold has-text-white acb-signup-button" href="https://docs.google.com/forms/d/1nuJW-ZWfX4PpOa5TBXrIaNZX7z1w-D5yCEj5n_BbWLw/viewform" target="_blank" rel="noopener noreferrer">Musician Signup Form</a>
+            </div>
+        </section>
+    </div>
+
     <div class="column is-one-third">
         <figure>
             {% image "src/_images/uncle_sam_trumpet.jpg", "Uncle Sam playing trumpet illustration", "(min-width: 768px) 33vw, 100vw", "has-soft-corners" %}
         </figure>
     </div>
     <div class="column">
-        <div class="container p-4">
-            <p>The Amherst Community Band features musicians of all abilities and ages from enthusiastic amateurs to professionals, music teachers, middle and high school students, college students, and retirees. Membership is open to all who are interested and no audition is required. <br><br>Come play with us. There's <i>no audition</i>! Simply join a rehearsal listed on our <a href="/members/">members page</a>.</p>
-        </div>
-        <br>
-        <div class="container has-text-centered">
-            <a class="button is-large is-primary has-text-white has-text-weight-bold" href="https://docs.google.com/forms/d/1nuJW-ZWfX4PpOa5TBXrIaNZX7z1w-D5yCEj5n_BbWLw/edit#response=ACYDBNi9KF_sG6WK7TuISavmooIY58MvRhoPU1S-JDF0rV94UQX7Nj6rtuBnhbGfvvjCRj4">Amherst Community Band 2026 Season Signup Form</a>
-        </div>
+        <section class="mb-5">
+            <h2 class="title is-3">Who can join</h2>
+            <p class="mb-3">The Amherst Community Band welcomes musicians of all abilities and ages, from enthusiastic amateurs to professionals, music teachers, middle and high school students, college students, and retirees.</p>
+            <p>Membership is open to all who are interested and no audition is required.</p>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="title is-3">Rehearsal information</h2>
+            <p class="mb-3">Come play with us. Simply join a rehearsal listed on our <a href="{{ '/members/' | withBase }}">members page</a>.</p>
+            <p class="mb-0"><strong>{{ config.rehearsals[0].label }}:</strong> {{ config.rehearsals[0].schedule_items[0].date_and_time }}</p>
+            <p class="mt-3 mb-0"><a class="button is-light has-text-weight-bold" href="{{ '/locations/' | withBase }}">View Locations &amp; Directions</a></p>
+        </section>
+
+        <section>
+            <h2 class="title is-3">What happens next</h2>
+            <p class="mb-3">For now, the easiest way to get started is to attend a rehearsal and introduce yourself to a band member or conductor.</p>
+            <p class="mb-0">If you have questions about playing with us, the members page is the best place to start.</p>
+        </section>
     </div>
 </div>

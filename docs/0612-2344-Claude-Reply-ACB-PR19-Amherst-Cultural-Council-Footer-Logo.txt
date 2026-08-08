@@ -1,0 +1,100 @@
+0612-2344-Claude-Reply-ACB-PR19-Amherst-Cultural-Council-Footer-Logo.txt
+
+ACB PR19 Amherst Cultural Council Footer Logo Reply
+Prepared: 2026-06-12 23:44 America/New_York (EDT)
+
+Outline
+- Goal: add the Amherst Cultural Council logo to the shared footer as a small, unobtrusive supporter credit.
+- Scope: shared footer include, footer CSS, and a clearer copy of the supplied logo asset.
+- Guardrails: keep the Virginia footer credit exactly unchanged and do not alter the main header or other content.
+- Validation: build and smoke QA completed successfully with zero issues.
+
+What Changed
+- Copied the supplied logo to a clearer site asset filename:
+  - `src/_images/amherst-cultural-council-logo.jpg`
+- Added the logo and small supporter credit to the shared footer:
+  - `_includes/footer.njk`
+- Added footer sizing and mobile overflow protection:
+  - `src/_css/custom.css`
+- Logged the change in both changelog files:
+  - `Changelog.md`
+  - `../../Downloads/acb/docs/CHANGELOG.md`
+
+Key Code Snippets
+- Shared footer addition:
+```njk
+<div class="acb-footer-supporter mb-3">
+    <img src="{{ '/_images/amherst-cultural-council-logo.jpg' | withBase }}" alt="Amherst Cultural Council" class="acb-footer-supporter-logo">
+    <p class="is-size-7 has-text-grey-lighter mb-0 mt-2">Supported in part by the Amherst Cultural Council.</p>
+</div>
+<p class="is-size-7 has-text-grey-lighter mb-1">Website by Virginia Partridge</p>
+```
+
+- Footer logo styling:
+```css
+.acb-footer-supporter {
+    max-width: 220px;
+    text-align: center;
+}
+
+.acb-footer-supporter-logo {
+    display: block;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+```
+
+- Mobile size adjustment:
+```css
+@media (max-width: 768px) {
+    .acb-footer-supporter {
+        max-width: 160px;
+    }
+
+    .acb-footer-supporter-logo {
+        max-width: 160px;
+    }
+}
+```
+
+File Paths
+- Footer include: `_includes/footer.njk`
+- Footer styles: `src/_css/custom.css`
+- Logo asset copy: `src/_images/amherst-cultural-council-logo.jpg`
+- Project changelog: `Changelog.md`
+- Docs changelog: `../../Downloads/acb/docs/CHANGELOG.md`
+- QA report: `docs/screenshots/puppeteer/qa-report.md`
+
+Inspection Evidence
+- Build succeeded with `npm run build` from the repository root.
+- Smoke QA succeeded with `npm run qa:smoke` and reported `Issues found: 0`.
+- QA report shows:
+  - `footerCredit: PASS`
+  - `schedulePdf: PASS`
+  - `locationsMapButtons: PASS`
+  - `joinSignupForm: PASS`
+- QA screenshots were written to:
+  - `docs/screenshots/puppeteer/desktop-home.png`
+  - `docs/screenshots/puppeteer/desktop-about.png`
+  - `docs/screenshots/puppeteer/desktop-join.png`
+  - `docs/screenshots/puppeteer/desktop-performances.png`
+  - `docs/screenshots/puppeteer/desktop-members.png`
+  - `docs/screenshots/puppeteer/desktop-donate.png`
+  - `docs/screenshots/puppeteer/desktop-board-volunteers.png`
+  - `docs/screenshots/puppeteer/desktop-documents.png`
+  - `docs/screenshots/puppeteer/desktop-community-music-links.png`
+  - `docs/screenshots/puppeteer/desktop-locations.png`
+  - `docs/screenshots/puppeteer/mobile-home.png`
+  - `docs/screenshots/puppeteer/mobile-join.png`
+  - `docs/screenshots/puppeteer/mobile-board-volunteers.png`
+  - `docs/screenshots/puppeteer/mobile-locations.png`
+  - `docs/screenshots/puppeteer/mobile-performances.png`
+
+Confirmation
+- The footer credit remains exactly: `Website by Virginia Partridge`
+- The Amherst Cultural Council logo is small, centered, and unobtrusive in the shared footer
+- No header changes were made
+- No Mass Cultural Council wording was added
+- No contact, newsletter, or public email behavior was changed

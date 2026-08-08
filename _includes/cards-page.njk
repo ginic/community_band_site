@@ -1,0 +1,72 @@
+---
+layout: page.njk
+---
+<section class="section">
+    <div class="acb-feature-layout">
+        <div class="acb-feature-main">
+            <h1 class="title is-1">{{ title }}</h1>
+            {% if intro %}
+                <p class="subtitle is-4 acb-feature-intro">{{ intro }}</p>
+            {% endif %}
+
+            {% if content %}
+                <div class="content acb-feature-copy">
+                    {{ content | safe }}
+                </div>
+            {% endif %}
+
+            {% if cards and cards.length %}
+                <div class="acb-card-stack">
+                    {% for card in cards %}
+                        <article class="acb-info-card">
+                            {% if card.eyebrow %}
+                                <p class="acb-card-eyebrow">{{ card.eyebrow }}</p>
+                            {% endif %}
+                            <h2 class="title is-4 mb-3">{{ card.title }}</h2>
+                            {% if card.subtitle %}
+                                <p class="subtitle is-6 mb-3">{{ card.subtitle }}</p>
+                            {% endif %}
+                            <div class="content mb-0">
+                                <p>{{ card.body }}</p>
+                            </div>
+                            {% if card.linkUrl and card.linkLabel %}
+                                <p class="mt-4 mb-0">
+                                    <a class="button is-primary has-text-weight-bold" href="{{ card.linkUrl }}">{{ card.linkLabel }}</a>
+                                </p>
+                            {% endif %}
+                        </article>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+
+        <aside class="acb-feature-sidebar" aria-label="Sidebar">
+            {% if sidebarBlocks and sidebarBlocks.length %}
+                {% for block in sidebarBlocks %}
+                    <section class="acb-sidebar-box">
+                        {% if block.title %}
+                            <h2 class="title is-5 mb-3">{{ block.title }}</h2>
+                        {% endif %}
+                        {% if block.items and block.items.length %}
+                            <ul class="acb-sidebar-list">
+                                {% for item in block.items %}
+                                    <li>
+                                        {% if item.url %}
+                                            <a href="{{ item.url }}">{{ item.label }}</a>
+                                        {% else %}
+                                            {{ item.label }}
+                                        {% endif %}
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        {% elif block.body %}
+                            <div class="content mb-0">
+                                <p>{{ block.body }}</p>
+                            </div>
+                        {% endif %}
+                    </section>
+                {% endfor %}
+            {% endif %}
+        </aside>
+    </div>
+</section>

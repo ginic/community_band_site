@@ -1,20 +1,110 @@
-<footer class="section has-background-dark has-text-white mt-auto is-fullwidth">
+<footer class="section has-background-dark has-text-white mt-auto is-fullwidth acb-footer">
     <div class="container">
-        <div class="columns is-vcentered">
-            <div class="column">
-                <p>
-                    <span class="has-text-weight-bold">Amherst Community Band</span>
-                    <span> Copyright 2026 </span>
+        <div class="columns is-variable is-6">
+            <div class="column is-4">
+                <p class="mb-2 has-text-weight-bold">Amherst Community Band</p>
+                <p class="mb-4">Amherst, Massachusetts</p>
+                <button class="button is-primary has-text-weight-bold has-text-white acb-footer-button" type="button" aria-controls="newsletter-modal" data-newsletter-modal-open>
+                    Sign up for updates
+                </button>
+                <p class="mt-2 is-size-7 has-text-grey-lighter">
+                    Newsletter signup will be added here after approval.
                 </p>
             </div>
-            <div class="column is-narrow">
-                <a href="https://facebook.com/AmherstCommunityBand" target="_blank" rel="noopener noreferrer" class="has-text-white">
-                    <svg width="24" height="24" viewBox="0 0 448 512" fill="currentColor">
-                        <path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"/>
-                    </svg>
-                </a>
+
+            <div class="column is-4">
+                <p class="mb-2 has-text-weight-bold">Public Pages</p>
+                <ul class="acb-footer-links">
+                    <li><a href="{{ '/board-volunteers/' | withBase }}" class="has-text-white">Board &amp; Volunteers</a></li>
+                    <li><a href="{{ '/documents/' | withBase }}" class="has-text-white">Public Documents</a></li>
+                    <li><a href="{{ '/community-music-links/' | withBase }}" class="has-text-white">Community Music Links</a></li>
+                    <li><a href="{{ '/locations/' | withBase }}" class="has-text-white">Locations &amp; Directions</a></li>
+                    <li><a href="{{ '/donate/' | withBase }}" class="has-text-white">Donate</a></li>
+                </ul>
             </div>
+
+            <div class="column is-4">
+                <p class="mb-2 has-text-weight-bold">Connect</p>
+                <ul class="acb-footer-links">
+                    <li>
+                        <a href="https://facebook.com/AmherstCommunityBand" target="_blank" rel="noopener noreferrer" class="has-text-white">
+                            Facebook
+                        </a>
+                    </li>
+                    <li><a href="{{ '/about/' | withBase }}" class="has-text-white">About Us</a></li>
+                    <li><a href="{{ '/join/' | withBase }}" class="has-text-white">Join Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="has-background-grey-darker my-4">
+
+        <div class="is-flex is-flex-direction-column is-justify-content-space-between is-align-items-center is-align-items-tablet-start">
+            <p class="is-size-7 has-text-grey-lighter mb-1">Website by Virginia Partridge</p>
+            <p class="is-size-7 has-text-grey-lighter mb-2">Copyright 2026</p>
         </div>
     </div>
 </footer>
+
+<div class="modal acb-newsletter-modal" id="newsletter-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="newsletter-modal-title">
+    <div class="modal-background" data-newsletter-modal-close></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title" id="newsletter-modal-title">Sign up for updates</p>
+            <button class="delete" type="button" aria-label="Close newsletter modal" data-newsletter-modal-close></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="mb-3">Get Amherst Community Band concert announcements and public updates.</p>
+            <p>Newsletter signup will be added here after approval.</p>
+        </section>
+        <footer class="modal-card-foot is-justify-content-flex-end">
+            <button class="button" type="button" data-newsletter-modal-close>Close</button>
+        </footer>
+    </div>
+</div>
+
+<div class="modal acb-contact-modal" id="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="modal-background" data-contact-modal-close></div>
+    <div class="modal-card">
+        <header class="modal-card-head">
+            <p class="modal-card-title" id="contact-modal-title">Contact Amherst Community Band</p>
+            <button class="delete" type="button" aria-label="Close contact modal" data-contact-modal-close></button>
+        </header>
+        <section class="modal-card-body">
+            <p class="mb-3">Have a question about the band, performances, donations, or getting involved?</p>
+            <p class="mb-4 acb-contact-demo-note"><strong>Contact form demo - not yet connected.</strong> After approval, this modal can be connected to Formspree.</p>
+
+            <div class="field">
+                <label class="label" for="contact-demo-name">Your name</label>
+                <div class="control">
+                    <input class="input" id="contact-demo-name" type="text" name="contact-demo-name" autocomplete="name" placeholder="Your name">
+                </div>
+            </div>
+
+            <div class="field">
+                <label class="label" for="contact-demo-email">Your email</label>
+                <div class="control">
+                    <input class="input" id="contact-demo-email" type="email" name="contact-demo-email" autocomplete="email" placeholder="your.email@example.com">
+                </div>
+            </div>
+
+            <div class="field mb-4">
+                <label class="label" for="contact-demo-message">Message</label>
+                <div class="control">
+                    <textarea class="textarea" id="contact-demo-message" name="contact-demo-message" rows="4" placeholder="How can we help?"></textarea>
+                </div>
+            </div>
+
+            <div class="acb-contact-captcha-placeholder mb-4" role="note" aria-live="polite">
+                CAPTCHA/spam protection will appear here after Formspree approval.
+            </div>
+
+            <p class="is-size-7 has-text-grey-dark mb-0">Approved public contact email is still pending confirmation.</p>
+        </section>
+        <footer class="modal-card-foot is-justify-content-space-between is-flex-wrap-wrap">
+            <button class="button" type="button" data-contact-modal-close>Close</button>
+            <button class="button is-primary has-text-weight-bold has-text-white" type="button" disabled aria-disabled="true">Send Message - demo only</button>
+        </footer>
+    </div>
+</div>
 

@@ -1,0 +1,64 @@
+0613-0531-Claude-Reply-Community-Music-Links-Content-Import.txt
+
+Community Music Links Page Update (Reply)
+Prepared: 2026-06-13 05:31 America/New_York (EDT)
+
+Outline
+- Imported content from `acb/docs/0613-0529-community-music-links.html` into the site page template.
+- Replaced placeholder sections on Community Music Links with the supplied area-band link list.
+- Preserved site layout conventions and removed old inline HTML formatting from the source file.
+- Updated changelogs and validated with a production build.
+
+What Was Implemented
+- Updated page content file:
+  - `src/community-music-links.njk`
+- Source file used:
+  - `/Users/macbookpro/Downloads/acb/docs/0613-0529-community-music-links.html`
+
+Key Content Added
+- Section title: `Area Community Bands`
+- External links and locations for:
+  - Chicopee Community Band
+  - Ludlow Community Band
+  - Montague Community Band
+  - Amherst Community Band
+  - Belchertown Community Band
+  - Florence Community Band
+  - Orange Community Band
+  - Senior Concert Band of Western Massachusetts (+ photos link)
+  - Greenfield Military Band
+  - Shelburne Falls Military Band
+  - Greater Westfield Community Band
+  - Quabbin Community Band
+- Added return link:
+  - `Return to Home` (uses `{{ '/' | withBase }}`)
+
+Key Code Snippet
+```njk
+<h2 class="title is-3">Area Community Bands</h2>
+<dl>
+    <dt><a href="https://www.facebook.com/pages/Greater-Chicopee-Area-Community-Concert-Band/117247554973941" target="_blank" rel="noopener noreferrer">Chicopee Community Band</a></dt>
+    <dd>Chicopee, Massachusetts</dd>
+    ...
+</dl>
+<p class="mt-4"><a href="{{ '/' | withBase }}">Return to Home</a></p>
+```
+
+Changelog Updates
+- `Changelog.md`
+  - Added unreleased entry for replacing placeholder Community Music Links content with the provided 0613-0529 list.
+- `/Users/macbookpro/Downloads/acb/docs/CHANGELOG.md`
+  - Added matching entry and referenced `src/community-music-links.njk`.
+
+Inspection Evidence
+- Build command run:
+  - `npm run build`
+- Build result:
+  - Passed
+  - `_site/community-music-links/index.html` generated successfully
+  - CSS/JS minification completed
+
+Files Changed
+- `src/community-music-links.njk`
+- `Changelog.md`
+- `/Users/macbookpro/Downloads/acb/docs/CHANGELOG.md`

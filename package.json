@@ -3,7 +3,8 @@
     "scripts": {
         "build": "ELEVENTY_ENV=production npx @11ty/eleventy && ELEVENTY_ENV=production node build.js",
         "build:dev": "npx @11ty/eleventy",
-        "serve": "npx @11ty/eleventy --serve"
+        "serve": "npx @11ty/eleventy --serve",
+        "qa:smoke": "node scripts/qa-smoke.js"
     },
     "dependencies": {
         "@11ty/eleventy": "^3.1.2",
@@ -11,6 +12,7 @@
     },
     "devDependencies": {
         "@11ty/eleventy-img": "^6.0.4",
-        "esbuild": "^0.25.10"
+        "esbuild": "^0.25.10",
+        "puppeteer": "^25.1.0"
     }
 }

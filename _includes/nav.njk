@@ -3,7 +3,10 @@
     <div class="container">
         <div class="navbar-brand">
             {% image "src" + config.logoUrl, config.title, "180px" %}
-            <a role="button" class="navbar-burger" data-target="navigation-headers" aria-label="menu" aria-expanded="false">
+            <button class="button is-light is-small has-text-weight-bold acb-contact-nav-button is-hidden-desktop" type="button" aria-controls="contact-modal" data-contact-modal-open>
+                Contact
+            </button>
+            <a role="button" class="navbar-burger" data-target="navigation-headers" aria-label="Toggle navigation menu" aria-controls="navigation-headers" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -14,10 +17,17 @@
         <div id="navigation-headers" class="navbar-menu">
             <div class="navbar-start">
                 {% for item in config.navbarMenu %}
-                    <a class="navbar-item" href="{{item.url}}">
+                    <a class="navbar-item" href="{{ item.url | withBase }}">
                         {{item.anchor}}
                     </a>
                 {% endfor %}
+            </div>
+            <div class="navbar-end is-hidden-touch">
+                <div class="navbar-item">
+                    <button class="button is-light is-small has-text-weight-bold acb-contact-nav-button" type="button" aria-controls="contact-modal" data-contact-modal-open>
+                        Contact
+                    </button>
+                </div>
             </div>
         </div>
     </div>
