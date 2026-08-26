@@ -5,7 +5,7 @@ description: Performance schedule for the Amherst Community Band.
 ---
 <div class="columns">
     <div class="column is-one-half is-offset-1">
-        <div class="container pl-6">
+        <div class="container">
         {% for category in config.concerts %}
             <h2 class="title is-2">{{ category.label }}</h2>
             {% for concert in category.schedule_items %}
