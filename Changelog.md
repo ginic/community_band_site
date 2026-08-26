@@ -9,9 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Logos and text on Mass Cultural Council and Amherst Cultural Council to bottom of homepage
 - Pull request template to manage contributions
+- Print view page template
+- Holiday 2026 concert details
+- List of new board members
 
 ### Fixed
 - Updated homepage button link to old schedule page to new performances page
+- Centering of page layout in container class in page.njk
+
+### Removed
+- Removed wide-page template
 
 ## [1.2.0] - 5/20/2026
 ### Added
