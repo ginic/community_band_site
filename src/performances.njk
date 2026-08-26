@@ -1,5 +1,5 @@
 ---
-layout: wide-page.njk
+layout: content-page.njk
 title: Performances
 description: Performance schedule for the Amherst Community Band.
 ---
@@ -14,6 +14,9 @@ description: Performance schedule for the Amherst Community Band.
                     <p class="subtitle is-6 mb-2">{{ concert.concert_name }}</p>
                 {% endif %}
                 <p class="subtitle is-6 mb-2">{{ concert.location }}</p>
+                {% if concert.extra_details %}
+                    <p class="is-italic">{{ concert.extra_details }}</p>
+                {% endif %}
                 <br>
             {% endfor %}
         {% endfor %}
@@ -24,4 +27,8 @@ description: Performance schedule for the Amherst Community Band.
             <iframe class="has-ratio" width="640" height="390" src="https://www.youtube.com/embed/Ip_l4Xkx-84?si=pu06PLu09FGJQytm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </figure>
     </div>
+</div>
+
+<div class="has-text-centered mt-5">
+    <a class="button is-large is-primary has-text-white has-text-weight-bold" href="/performances_print/" target="_blank"">Printable Performance Schedule</a>
 </div>

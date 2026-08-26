@@ -1,0 +1,23 @@
+---
+layout: print-view.njk
+title: Amherst Community Band Performance Schedule
+description: Performance schedule for the Amherst Community Band.
+---
+<div class="container">
+    {% for category in config.concerts %}
+        <h2 class="title is-2">{{ category.label }}</h2>
+        {% for concert in category.schedule_items %}
+            <h4 class="title is-4 mb-2">{{ concert.date_and_time}}</h4>
+            {% if concert.concert_name %}
+                <p class="subtitle is-6 mb-2">{{ concert.concert_name }}</p>
+            {% endif %}
+            <p class="subtitle is-6 mb-2">{{ concert.location }}</p>
+            {% if concert.extra_details %}
+                <p class="is-italic">{{ concert.extra_details }}</p>
+            {% endif %}
+            <br>
+        {% endfor %}
+    {% endfor %}
+    </div>
+</div>
+
