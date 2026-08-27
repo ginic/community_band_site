@@ -26,7 +26,7 @@ The publicly visible Google calendar is at https://calendar.google.com/calendar/
 ## On the webpages
 To edit the list of rehearsals and performances that appear on the website, you just need to change the items listed under the `"rehearsals"` and `"concerts"` lists respectively in `_data/config.json`. Both contain JSON lists of objects with the following fields:
     - The `"label"` field adds a subheader for the concerts, e.g. so you can have two sections, one for "Summer 2025" and one for "Winter 2025"
-    - The `"schedule_items"` list of JSON objects where you add concerts or rehearsals that belong to the corresponding `"label"` category. Objects require a `"date_and_time"` field (e.g. `"Saturday, December 13th at 6 pm"`). Concerts require a `"location"` field, but that is optional for rehearsals. A `"concert_name"` field is optional for concerts. The items will be displayed exactly as the text in `_data/config.json`, you cannot add HTML markdown to them.
+    - The `"schedule_items"` list of JSON objects where you add concerts or rehearsals that belong to the corresponding `"label"` category. Objects require a `"date_and_time"` field (e.g. `"Saturday, December 13th at 6 pm"`). Concerts require a `"location"` field, but that is optional for rehearsals. A `"concert_name"` field is optional for concerts. An `"extra_details"` field is also optional for concerts and may be used to add information in italicized text, such as a rain date/location. The items will be displayed exactly as the text in `_data/config.json`, you cannot add HTML markdown to them.
 
 # Attributions
 Icons and 404 page image created by [Freepik](www.freepik.com) and [Flaticon](www.flaticon.com) and used under their free license
