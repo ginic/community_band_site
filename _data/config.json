@@ -57,8 +57,7 @@
                 {
                     "date_and_time":"Saturday, December 5th, 6:30pm",
                     "concert_name":"Holiday Concert",
-                    "location":"St. Brigid's Parish Hall, 43 N Prospect St, Amherst, MA 01002",
-                    "extra_details": "Tentative"
+                    "location":"St. Brigid's Parish Hall, 43 N Prospect St, Amherst, MA 01002"
                 }
             ]
         }
@@ -67,7 +66,7 @@
         {
             "label": "2026 Rehearsals",
             "schedule_items": [
-                {"date_and_time": "Holiday Concert Rehearsal: Thursday, December 3rd, 6-8pm (tentative)"}
+                {"date_and_time": "Holiday Concert Rehearsal: Thursday, December 3rd, 6-8:15pm"}
             ]
         }
     ],
